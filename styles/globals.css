@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  body {
-    @apply bg-[#06202A];
-  }
-} */
+/* use tailwind */
+body {
+  background-color: black;
+  font-family: 'Noto Sans KR', sans-serif;
+}
