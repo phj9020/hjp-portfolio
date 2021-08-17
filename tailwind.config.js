@@ -9,10 +9,19 @@ module.exports = {
     extend: {
       colors: {
         green: {
-          DEFAULT: '#00f260',
+          DEFAULT: '#67B26F',
         },
         blue: {
-          DEFAULT: "#55a4fa",
+          DEFAULT: "#4ca2cd",
+        },
+        black: {
+          DEFAULT : "#ffffff",
+        },
+        grayish: {
+          DEFAULT : "#414345",
+        },
+        menuActive: {
+          DEFAULT : "#65ae99",
         }
       }
     },

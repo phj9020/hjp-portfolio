@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from './../components/Navbar';
 
 export default function Home() {
   return (
@@ -10,7 +11,6 @@ export default function Home() {
         <meta name="description" content="박한진의 포트폴리오, Hanjin Park's portfolio" />
         <link rel="icon" href="/portfolio.png" />
       </Head>
-      <h1 className="text-purple-600 hover:text-red-500">박한진</h1>
     </div>
   )
 }
