@@ -7,7 +7,7 @@ function Sidebar() {
         <div>
             <Image className="rounded-full" src="/profile.jpg" alt="profile" width="150" height="150"/>
             <h3 className="my-3 text-3xl font-medium tracking-wider font-nanum">박<span className="text-blue">한진</span></h3>
-            <p className="w-8/12 p-2 m-auto text-sm bg-gray-200 rounded-lg text-center-sm">Front-end web development</p>
+            <p className="w-8/12 p-2 m-auto text-sm bg-gray-200 rounded-lg text-center-sm">Front-End Developer</p>
             <a className="block w-8/12 p-2 m-auto my-2 text-sm transition duration-700 ease-in-out bg-gray-200 rounded-lg text-center-sm hover:bg-blue hover:text-white" href="" download="name">이력서 다운로드</a>
             <div className="flex items-center my-3 text-green justify-evenly">
                 <a href="https://github.com/phj9020" target="_blank" rel="noreferrer" className="flex items-center justify-center py-1"> 
