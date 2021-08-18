@@ -6,3 +6,10 @@ export interface IService {
     description: string;
     Icon: IconType
 }
+
+export interface ISKill {
+    id: number,
+    name: string,
+    level: string,
+    Icon: IconType
+}
