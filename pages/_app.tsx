@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar'
+import "@material-tailwind/react/tailwind.css";
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {

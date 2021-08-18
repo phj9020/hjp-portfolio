@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { Bar } from '../components/Bar';
+import {languages, tools} from '../data';
 
 function resume() {
     return (
@@ -9,6 +11,7 @@ function resume() {
                     <meta name="description" content="Your description goes here" />
             </Head>
             <div className="p-5">
+                {/* Experience & Dev Study */}
                 <div className="grid grid-cols-1 gap-4 mb-6 md:grid-cols-2">
                     <div className="mb-4 md:mb-0">
                         <h3 className="mb-2 text-lg font-bold">Experience</h3>
@@ -52,13 +55,23 @@ function resume() {
                         </div>
                     </div>
                 </div>
+                {/* Language & tool chart */}
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                     <div>
-                        <h3 className="mb-2 text-lg font-bold">Language&amp;Framework</h3>
+                        <h3 className="mb-4 text-lg font-bold">Language &amp; Framework</h3>
+                        <div className="text-sm md:text-base">
+                            {languages.map(language =>
+                                <Bar data={language} key={language.id} />
+                            )}
+                        </div>
                     </div>
                     <div>
-                        <h3 className="mb-2 text-lg font-bold">Tools</h3>
-
+                        <h3 className="mb-4 text-lg font-bold">Tools</h3>
+                        <div className="text-sm md:text-base">
+                            {tools.map(tool =>
+                                <Bar data={tool} key={tool.id} />
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

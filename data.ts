@@ -38,7 +38,7 @@ export const services:IService[] = [
     },
 ];
 
-export const language:ISKill[] = [
+export const languages:ISKill[] = [
     {
         id:1,
         name:"Javascript",
@@ -100,7 +100,7 @@ export const tools:ISKill[] = [
     {
         id:4,
         name:"Framer",
-        level:"40%",
+        level:"35%",
         Icon:FiFramer
     },
 ]
