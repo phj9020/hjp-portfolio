@@ -18,8 +18,8 @@ function resume() {
                         <div className="text-sm md:text-base">
                             <h4 className="mb-2 italic">IMHC (2017.02 ~ 2020.06)</h4>
                             <p>플럼보드 서비스(설문조사 솔루션) 기획 및 마케팅</p>
-                            <div className="w-3/12 mt-3 text-center border-2 rounded-lg">
-                                <span className="py-0.5 px-1 whitespace-nowrap block text-sm">담당업무</span>
+                            <div className="w-3/12 mt-3 text-center border-2 rounded-lg border-menuActive dark:border-pinkyEnd">
+                                <span className="py-0.5 px-1 whitespace-nowrap block text-sm ">담당업무</span>
                             </div>
                             <ul className="pl-5 mt-2 list-disc">
                                 <li>기획 요구사항 정리</li>
@@ -46,10 +46,13 @@ function resume() {
                             <p>프론트엔드UI/UX 과정 수료</p>
                             <ul>
                                 <li>
-                                    <a className="underline transition duration-300 hover:text-red-400" href="http://geomang.dothome.co.kr/geomangmn/index.php" target="_blank" rel="noreferrer">1.개오망 웹사이트</a>
+                                    <a className="underline transition duration-300 hover:text-red-400" 
+                                    href="http://geomang.dothome.co.kr/geomangmn/index.php" 
+                                    target="_blank"
+                                    rel="noreferrer">개오망 웹사이트(html,css,javascript)</a>
                                 </li>
                                 <li>
-                                    <a className="underline transition duration-300 hover:text-red-400" href="http://geomang.dothome.co.kr/hjp/" target="_blank" rel="noreferrer">2.프리 디자인 웹사이트</a>
+                                    <a className="underline transition duration-300 hover:text-red-400" href="http://geomang.dothome.co.kr/hjp/" target="_blank" rel="noreferrer">프리 디자인 웹사이트(html,css,javascript)</a>
                                 </li>
                             </ul>
                         </div>

@@ -19,7 +19,7 @@ class MyDocument extends Document {
                     crossOrigin="anonymous"
                 />
             </Head>
-            <body className="bg-gradient-to-r from-green to-blue-400">
+            <body className="bg-gradient-to-r from-green to-blue-400 dark:from-midnightStart dark:to-midnightEnd">
                 <Main />
                 <NextScript />
             </body>

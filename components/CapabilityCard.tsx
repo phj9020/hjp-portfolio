@@ -10,8 +10,8 @@ const CapabilityCard:FunctionComponent<{service:IService}> = ({service:{id, titl
     };
     
     return (
-        <div key={id} className="flex items-center p-4 bg-gray-200 rounded-md">
-            <Icon className="w-12 h-12 mr-4 lg:mr-6 text-green"/>
+        <div key={id} className="flex items-center p-4 bg-gray-200 rounded-md dark:bg-grayish">
+            <Icon className="w-12 h-12 mr-4 lg:mr-6 text-green dark:text-pinkyEnd"/>
             <div className="text-sm lg:text-base ">
                 <h3 className="mb-1 font-semibold lg:mb-2">{title}</h3>
                 <p dangerouslySetInnerHTML={createMarkUp()} />

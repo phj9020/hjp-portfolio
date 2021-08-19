@@ -8,7 +8,7 @@ function projects() {
                     <meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
                     <meta name="description" content="Your description goes here" />
             </Head>
-            <div className="p-4">
+            <div className="p-5">
                 projects
             </div>
         </div>

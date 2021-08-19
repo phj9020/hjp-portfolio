@@ -29,7 +29,7 @@ export default function Home() {
         </p>
       </div>
       <div>
-        <h2 className="text-base font-bold mb-9">Capability</h2>
+        <h2 className="text-lg font-bold mb-9">Capability</h2>
         <div className="grid lg:grid-cols-2 gap-x-4 gap-y-3">
           {services.map(service => (
             // To do : Framer motion apply 

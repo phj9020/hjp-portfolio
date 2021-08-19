@@ -3,7 +3,7 @@ import { IService, ISKill } from './type';
 import {FiMonitor, FiFigma, FiFramer} from 'react-icons/fi';
 import {DiJavascript1, DiReact, DiVisualstudio} from 'react-icons/di';
 import {GrGraphQl} from 'react-icons/gr';
-import {SiExpo, SiApollographql, SiMaterialUi} from 'react-icons/si';
+import {SiExpo, SiApollographql, SiMaterialUi, SiPostman} from 'react-icons/si';
 
 export const services:IService[] = [
     {   
@@ -42,31 +42,31 @@ export const languages:ISKill[] = [
     {
         id:1,
         name:"Javascript",
-        level:"75%",
+        level:"70%",
         Icon:DiJavascript1
     },
     {
         id:2,
         name:"React.js",
-        level:"70%",
+        level:"65%",
         Icon:DiReact
     },
     {
         id:3,
-        name:"React Native(expo)",
+        name:"Expo",
         level:"60%",
         Icon:SiExpo
     },
     {
         id:4,
         name:"GraphQL",
-        level:"65%",
+        level:"50%",
         Icon:GrGraphQl
     },
     {
         id:5,
         name:"Apollo",
-        level:"65%",
+        level:"50%",
         Icon:SiApollographql
     },
     {
@@ -82,23 +82,29 @@ export const tools:ISKill[] = [
     {
         id:1,
         name:"Github",
-        level:"70%",
+        level:"60%",
         Icon:AiOutlineGithub
     },
     {
         id:2,
         name:"VS Code",
-        level:"85%",
+        level:"80%",
         Icon:DiVisualstudio
     },
     {
         id:3,
+        name:"Postman",
+        level:"50%",
+        Icon:SiPostman
+    },
+    {
+        id:4,
         name:"Figma",
         level:"70%",
         Icon:FiFigma
     },
     {
-        id:4,
+        id:5,
         name:"Framer",
         level:"35%",
         Icon:FiFramer
