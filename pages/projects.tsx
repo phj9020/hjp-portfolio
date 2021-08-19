@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import {projects} from '../data';
 
-function projects() {
+function projectsPage() {
     return (
         <div>
             <Head>
@@ -9,10 +10,13 @@ function projects() {
                     <meta name="description" content="Your description goes here" />
             </Head>
             <div className="p-5">
-                projects
+                <nav className="mb-2">navbar</nav>
+                {
+                    projects.map(project => <div key={project.id}>{project.name}</div>)
+                }
             </div>
         </div>
     )
 }
 
-export default projects
+export default projectsPage;

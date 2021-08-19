@@ -33,14 +33,14 @@ function Navbar() {
         }
     },[]);
     return (
-        <div className="flex justify-between p-5">
+        <nav className="flex justify-between p-5">
             <span className="text-xl font-bold border-b-4 border-menuActive text-menuActive dark:text-pinkyEnd dark:border-pinkyEnd md:text-2xl">{activeMenu}</span>
             <div className="flex space-x-5 text-lg text-red-400 dark:text-menuActive">
                 <NavItem activeMenu={activeMenu}  setActiveMenu={setActiveMenu} name="About" route="/" />
                 <NavItem activeMenu={activeMenu}  setActiveMenu={setActiveMenu} name="Resume" route="/resume" />
                 <NavItem activeMenu={activeMenu}  setActiveMenu={setActiveMenu} name="Projects" route="/projects" />
             </div>
-        </div>
+        </nav>
     )
 }
 
