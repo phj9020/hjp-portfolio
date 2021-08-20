@@ -10,6 +10,9 @@ module.exports = {
       "custom-light": "6px 8px 7px 3px rgba(0,0,0,0.41)",
       "custom-dark": "8px 8px 9px -1px rgba(0,0,0,0.32)",
     },
+    maxHeight: {
+      'container': '632px'
+    },
     extend: {
       colors: {
         green: {

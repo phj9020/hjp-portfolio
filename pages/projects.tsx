@@ -1,7 +1,8 @@
 import Head from 'next/head';
+import ProjectCard from '../components/ProjectCard';
 import {projects} from '../data';
 
-function projectsPage() {
+function Projects() {
     return (
         <div>
             <Head>
@@ -9,14 +10,21 @@ function projectsPage() {
                     <meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
                     <meta name="description" content="Your description goes here" />
             </Head>
-            <div className="p-5">
-                <nav className="mb-2">navbar</nav>
-                {
-                    projects.map(project => <div key={project.id}>{project.name}</div>)
-                }
+            <div className="p-5 overflow-y-scroll max-h-container">
+                {/* todo: Navbar component */}
+                <nav>navbar</nav>
+                <div className="grid grid-cols-12 gap-4 my-3">
+                    {
+                        projects.map(project => 
+                            <div className="col-span-12 p-2 sm:col-span-6 lg:col-span-4" key={project.id}>
+                                <ProjectCard project={project} />
+                            </div>
+                        )
+                    }
+                </div>
             </div>
         </div>
     )
 }
 
-export default projectsPage;
+export default Projects;
