@@ -23,6 +23,7 @@ export interface IProject {
     description: string,
     image_path: string,
     github_url: string,
+    deployed_url: string,
     category: Category[],
     key_stacks: string[],
 }

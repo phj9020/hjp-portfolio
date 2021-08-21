@@ -119,6 +119,7 @@ export const projects:IProject[] = [
         description: "리액트, 파이어베이스, 컨텍스트로 구현한 아마존 이커머스 웹사이트",
         image_path: "/images/amazon.png",
         github_url:"https://github.com/phj9020/amazon-clone",
+        deployed_url: "https://clone-f8fa9.web.app",
         category:["All","React"],
         key_stacks: ["react.js", "firebase-auth", "firestore", "stripe-payment", "Context"]
     },
@@ -128,6 +129,7 @@ export const projects:IProject[] = [
         description: "리액트, 파이어베이스와 리덕스로 구현한 디즈니 웹사이트",
         image_path: "/images/disney.png",
         github_url:"https://github.com/phj9020/disney-clone",
+        deployed_url: "https://disney-clone-6f652.web.app",
         category:["All","React"],
         key_stacks: ["react.js", "firebase-auth", "firestore", "styled-components", "redux"]
     },
@@ -137,6 +139,7 @@ export const projects:IProject[] = [
         description: "express와 pug템플릿으로 구현한 유튜브 웹사이트, CRUD 구현",
         image_path: "/images/youtube.png",
         github_url:"https://github.com/phj9020/youtube-reloaded",
+        deployed_url: "https://wetube-reload.herokuapp.com/",
         category:["All","Express"],
         key_stacks: ["node.js", "express.js", "pug", "scss", "webpack", "MVC"]
     },
@@ -146,6 +149,7 @@ export const projects:IProject[] = [
         description: "TMDb 영화 API와 expo를 이용한 movie-time 어플리케이션",
         image_path: "/images/movie-native.png",
         github_url:"https://github.com/phj9020/movies-native",
+        deployed_url: "https://play.google.com/store/apps/details?id=com.phj9020.movietime",
         category:["All","Expo"],
         key_stacks: ["Expo", "react-native", "TMDb API"]
     },
@@ -155,6 +159,7 @@ export const projects:IProject[] = [
         description: "리액트와 파이어베이스로 구현한 Slack 채팅 앱",
         image_path: "/images/slack.png",
         github_url:"https://github.com/phj9020/slack-clone",
+        deployed_url: "https://slack-clone-redux-c4dfa.web.app/#/",
         category:["All","React"],
         key_stacks: ["React.js", "firebase-auth", "firestore", "firebase-hosting", "redux", "material-ui"]
     },
@@ -164,6 +169,7 @@ export const projects:IProject[] = [
         description: "next.js와 tailwind Css, TMDb 영화 API로 구현한 반응형 Hulu 웹사이트",
         image_path: "/images/hulu.png",
         github_url:"https://github.com/phj9020/next-hulu",
+        deployed_url: "https://next-hulu-one.vercel.app/",
         category:["All","Next"],
         key_stacks: ["Next.js", "tailwind CSS", "TMDb API"]
     },
@@ -173,6 +179,7 @@ export const projects:IProject[] = [
         description: "포스트로 생각을 공유하는 소셜 미디어 앱",
         image_path: "/images/socialMedia_client.png",
         github_url:"https://github.com/phj9020/phj9020-socialMedia-merng-client",
+        deployed_url: "https://6108ff3d036a2900089b0f80--practical-kalam-b3d878.netlify.app",
         category:["All","React"],
         key_stacks: ["React.js", "Apollo-client", "GraphQL", "Semantic-ui"]
     },
@@ -182,6 +189,7 @@ export const projects:IProject[] = [
         description: "로그인/로그아웃/포스트 생성 및 삭제/댓글생성 및 삭제/좋아요 토글 기능과 데이터베이스 연결",
         image_path: "/images/socialMedia_back.png",
         github_url:"https://github.com/phj9020/socialMedia-merng-backend",
+        deployed_url: "https://social-media-app-merng.herokuapp.com/graphql",
         category:["All","Express"],
         key_stacks: ["Express.js", "Apollo-server", "GraphQL", "MongoDB"]
     },
@@ -191,6 +199,7 @@ export const projects:IProject[] = [
         description: "리액트, 파이어베이스로 구현한 트위터 웹사이트 클론",
         image_path: "/images/twitter.png",
         github_url:"https://github.com/phj9020/twitter-clone",
+        deployed_url: "https://phj9020.github.io/twitter-clone",
         category:["All","React"],
         key_stacks: ["React.js", "firebase-auth", "firebase-storage", "firestore"]
     },
