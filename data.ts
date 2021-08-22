@@ -115,18 +115,18 @@ export const tools:ISKill[] = [
 export const projects:IProject[] = [
     {
         id:1,
-        name: "아마존 클론",
-        description: "리액트, 파이어베이스, 컨텍스트로 구현한 아마존 이커머스 웹사이트",
+        name: "이커머스 웹사이트",
+        description: "리액트, 파이어베이스, Context API로 구현한 아마존 이커머스 웹사이트. 로그인, 로그아웃, 장바구니 담기 및 스트라이프 결제 기능 구현",
         image_path: "/images/amazon.png",
         github_url:"https://github.com/phj9020/amazon-clone",
         deployed_url: "https://clone-f8fa9.web.app",
         category:["All","React"],
-        key_stacks: ["react.js", "firebase-auth", "firestore", "stripe-payment", "Context"]
+        key_stacks: ["react.js", "firebase-auth", "firestore", "stripe-payment", "context API"]
     },
     {
         id:2,
-        name: "디즈니 클론",
-        description: "리액트, 파이어베이스와 리덕스로 구현한 디즈니 웹사이트",
+        name: "디즈니 플러스 클론",
+        description: "리액트, 파이어베이스와 리덕스로 구현한 디즈니 플러스 웹사이트",
         image_path: "/images/disney.png",
         github_url:"https://github.com/phj9020/disney-clone",
         deployed_url: "https://disney-clone-6f652.web.app",
@@ -136,32 +136,32 @@ export const projects:IProject[] = [
     {
         id:3,
         name: "유튜브 클론",
-        description: "express와 pug템플릿으로 구현한 유튜브 웹사이트, CRUD 구현",
+        description: "express와 pug템플릿으로 구현한 유튜브 웹사이트, MVC패턴을 이용한 CRUD 구현",
         image_path: "/images/youtube.png",
         github_url:"https://github.com/phj9020/youtube-reloaded",
         deployed_url: "https://wetube-reload.herokuapp.com/",
         category:["All","Express"],
-        key_stacks: ["node.js", "express.js", "pug", "scss", "webpack", "MVC"]
+        key_stacks: ["node.js", "express.js", "pug", "scss", "webpack", "mongoDB", "mvc"]
     },
     {
         id:4,
         name: "무비 타임",
-        description: "TMDb 영화 API와 expo를 이용한 movie-time 어플리케이션",
+        description: "최신 영화 및 TV드라마 정보를 볼 수 있는 앱. TMDb 영화 API와 expo로 구현한 movie-time 어플리케이션",
         image_path: "/images/movie-native.png",
         github_url:"https://github.com/phj9020/movies-native",
         deployed_url: "https://play.google.com/store/apps/details?id=com.phj9020.movietime",
         category:["All","Expo"],
-        key_stacks: ["Expo", "react-native", "TMDb API"]
+        key_stacks: ["expo", "react-native", "TMDb API"]
     },
     {
         id:5,
-        name: "슬랙 클론",
+        name: "HJP 채널 슬랙 채팅방",
         description: "리액트와 파이어베이스로 구현한 Slack 채팅 앱",
         image_path: "/images/slack.png",
         github_url:"https://github.com/phj9020/slack-clone",
         deployed_url: "https://slack-clone-redux-c4dfa.web.app/#/",
         category:["All","React"],
-        key_stacks: ["React.js", "firebase-auth", "firestore", "firebase-hosting", "redux", "material-ui"]
+        key_stacks: ["react.js", "firebase-auth", "firestore", "firebase-hosting", "redux", "material-ui"]
     },
     {
         id:6,
@@ -171,7 +171,7 @@ export const projects:IProject[] = [
         github_url:"https://github.com/phj9020/next-hulu",
         deployed_url: "https://next-hulu-one.vercel.app/",
         category:["All","Next"],
-        key_stacks: ["Next.js", "tailwind CSS", "TMDb API"]
+        key_stacks: ["next.js", "tailwind CSS", "TMDb API"]
     },
     {
         id:7,
@@ -181,17 +181,17 @@ export const projects:IProject[] = [
         github_url:"https://github.com/phj9020/phj9020-socialMedia-merng-client",
         deployed_url: "https://6108ff3d036a2900089b0f80--practical-kalam-b3d878.netlify.app",
         category:["All","React"],
-        key_stacks: ["React.js", "Apollo-client", "GraphQL", "Semantic-ui"]
+        key_stacks: ["react.js", "apollo-client", "graphQL", "semantic-ui"]
     },
     {
         id:8,
         name: "소셜미디어 앱(백엔드)",
-        description: "로그인/로그아웃/포스트 생성 및 삭제/댓글생성 및 삭제/좋아요 토글 기능과 데이터베이스 연결",
+        description: "데이터베이스(MongoDB)에 기반한 로그인, 로그아웃, 포스트 생성 및 삭제, 댓글생성 및 삭제, 좋아요 토글 기능 구현",
         image_path: "/images/socialMedia_back.png",
         github_url:"https://github.com/phj9020/socialMedia-merng-backend",
         deployed_url: "https://social-media-app-merng.herokuapp.com/graphql",
         category:["All","Express"],
-        key_stacks: ["Express.js", "Apollo-server", "GraphQL", "MongoDB"]
+        key_stacks: ["node.js","express.js", "apollo-server", "graphQL", "mongoDB"]
     },
     {
         id:9,
@@ -201,6 +201,6 @@ export const projects:IProject[] = [
         github_url:"https://github.com/phj9020/twitter-clone",
         deployed_url: "https://phj9020.github.io/twitter-clone",
         category:["All","React"],
-        key_stacks: ["React.js", "firebase-auth", "firebase-storage", "firestore"]
+        key_stacks: ["react.js", "firebase-auth", "firebase-storage", "firestore"]
     },
 ]

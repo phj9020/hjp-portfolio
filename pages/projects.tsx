@@ -8,7 +8,6 @@ import { ProjectNavBar } from './../components/ProjectNavBar';
 function Projects() {
     const [projectFilter, setProjectFilter] = useState(projects);
     const [active, setActive] = useState("All");
-    console.log(active);
     
     const handleFilterCategory = (category: Category) => {
         if(category === "All") {
@@ -16,7 +15,6 @@ function Projects() {
             setActive(category);
         }
         const filteredData = projects.filter((project) => project.category.includes(category));
-        console.log(filteredData);
         setProjectFilter(filteredData);
         setActive(category);
     };

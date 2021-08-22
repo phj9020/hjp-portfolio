@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import {AiFillGithub} from "react-icons/ai";
 import {GoLocation} from 'react-icons/go';
-import { useTheme } from 'next-themes'
+import { useTheme } from 'next-themes';
 
 function Sidebar() {
     const { theme, setTheme } = useTheme();
@@ -12,7 +12,7 @@ function Sidebar() {
 
     return (
         <div>
-            <Image className="rounded-full" src="/profile.jpg" alt="profile" width="150" height="150"/>
+            <Image className="rounded-full" src="/profile.jpg" alt="profile" width="150" height="150" layout="intrinsic" />
             <h3 className="my-3 text-3xl font-medium tracking-wider font-nanum dark:text-white">박<span className="text-blue dark:text-menuActiveDark">한진</span></h3>
             <p className="w-8/12 p-2 m-auto text-sm bg-gray-200 rounded-lg dark:bg-lightgray text-center-sm">Front-End Developer</p>
             <a className="block w-8/12 p-2 m-auto my-2 text-sm transition duration-700 ease-in-out bg-gray-200 rounded-lg dark:bg-lightgray dark:hover:bg-red-400 text-center-sm hover:bg-blue hover:text-white" href="" download="name">이력서 다운로드</a>

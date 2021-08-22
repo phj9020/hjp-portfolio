@@ -13,6 +13,7 @@ function resume() {
             <div className="p-5">
                 {/* Experience & Dev Study */}
                 <div className="grid grid-cols-1 gap-4 mb-6 md:grid-cols-2">
+                     {/* to do : framer - y bottom to top  animation */}
                     <div className="mb-4 md:mb-0">
                         <h3 className="mb-2 text-lg font-bold">Experience</h3>
                         <div className="text-sm md:text-base">
@@ -31,6 +32,7 @@ function resume() {
                             </ul>
                         </div>
                     </div>
+                    {/*  to do : framer - y bottom to top  animation */}
                     <div>
                         <h3 className="mb-2 text-lg font-bold">Dev Study</h3>
                         <div className="mb-3 text-sm md:mb-3 md:text-base">

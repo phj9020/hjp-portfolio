@@ -19,7 +19,7 @@ const ProjectCard:FunctionComponent<{project:IProject}> = ({project}) => {
     return (
         <div className="flex flex-col" >
             <Image className="cursor-pointer" src={image_path} alt={name} width={300} height={200} layout="responsive" onClick={showDetailModal} />
-            <p className="my-2 text-sm text-center">{name}</p>
+            <p className="my-2 text-sm text-center cursor-pointer" onClick={showDetailModal}>{name}</p>
             {/* modal */}
             {showDetail ? (
                 <div className="absolute top-0 left-0 z-10 grid w-full h-auto px-5 text-black bg-white border-2 rounded py-9 border-green dark:border-pinkyEnd md:grid-cols-2 gap-x-12 dark:text-white dark:bg-grayish">

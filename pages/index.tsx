@@ -2,17 +2,6 @@ import Head from 'next/head';
 import CapabilityCard from '../components/CapabilityCard';
 import {services} from '../data';
 
-// export const getStaticProps = async(context:GetStaticPropsContext)=> {
-//   const res = await fetch('http://localhost:3000/api/services');
-//   const data = await res.json();
-//   console.log(data)
-//   return {
-//     props: {
-//       data
-//     }
-//   }
-// };
-
 export default function Home() {
   return (
     <div className="p-5">
