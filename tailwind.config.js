@@ -13,6 +13,9 @@ module.exports = {
     maxHeight: {
       'container': '632px'
     },
+    minHeight: {
+      'container': '500px'
+    },
     extend: {
       colors: {
         green: {

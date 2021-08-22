@@ -6,7 +6,7 @@ import {MdClose} from 'react-icons/md';
 
 const ProjectCard:FunctionComponent<{project:IProject}> = ({project}) => {
     const [showDetail, setShowDetail] = useState(false);
-    const {id,name, description, image_path, github_url, deployed_url, category, key_stacks} = project;
+    const {name, description, image_path, github_url, deployed_url, key_stacks} = project;
     
     
     const showDetailModal = ()=> {
@@ -22,10 +22,10 @@ const ProjectCard:FunctionComponent<{project:IProject}> = ({project}) => {
             <p className="my-2 text-sm text-center">{name}</p>
             {/* modal */}
             {showDetail ? (
-                <div className="absolute left-0 z-10 grid w-full h-auto px-5 text-black bg-white border-2 rounded py-9 top-20 border-green dark:border-pinkyEnd md:grid-cols-2 gap-x-12 dark:text-white dark:bg-grayish">
+                <div className="absolute top-0 left-0 z-10 grid w-full h-auto px-5 text-black bg-white border-2 rounded py-9 border-green dark:border-pinkyEnd md:grid-cols-2 gap-x-12 dark:text-white dark:bg-grayish">
                     <div>
                         <Image src={image_path} alt={name} width={300} height={200} layout="responsive" />
-                        <div className="flex justify-center mt-6 space-x-3">
+                        <div className="flex justify-center mt-6 mb-6 space-x-3 md:mb-0">
                             <a href={github_url} target="_blank" rel="noreferrer" className="flex items-center px-4 py-2 space-x-1 text-sm bg-gray-300 rounded dark:bg-gray-400">
                                 <AiFillGithub />
                                 <span>Github</span>
