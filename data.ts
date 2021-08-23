@@ -121,7 +121,7 @@ export const projects:IProject[] = [
         github_url:"https://github.com/phj9020/amazon-clone",
         deployed_url: "https://clone-f8fa9.web.app",
         category:["All","React"],
-        key_stacks: ["react.js", "firebase-auth", "firestore", "stripe-payment", "context API"]
+        key_stacks: ["react.js", "firebase-auth", "firestore", "stripe-payment", "styled-components", "context API"]
     },
     {
         id:2,
@@ -151,7 +151,7 @@ export const projects:IProject[] = [
         github_url:"https://github.com/phj9020/movies-native",
         deployed_url: "https://play.google.com/store/apps/details?id=com.phj9020.movietime",
         category:["All","Expo"],
-        key_stacks: ["expo", "react-native", "TMDb API"]
+        key_stacks: ["expo", "react-native", "styled-components", "TMDb API"]
     },
     {
         id:5,

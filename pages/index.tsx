@@ -1,15 +1,16 @@
 import Head from 'next/head';
 import CapabilityCard from '../components/CapabilityCard';
 import {services} from '../data';
+import { motion } from "framer-motion";
+import { fadeInAnimation, routeAnimation, stagger } from '../animation';
 
 export default function Home() {
   return (
-    <div className="p-5">
+    <motion.div className="p-5" variants={routeAnimation} initial="initial" animate="animate" exit="exit">
       <Head>
         <title>박한진-포트폴리오 | About</title>
         <meta name="keyword" content="프론트엔드, 개발, 포트폴리오, fontend, developer, nextjs, portfolio" />
         <meta name="description" content="박한진의 포트폴리오, Hanjin Park's portfolio" />
-        <link rel="icon" href="/portfolio.png" />
       </Head>
       <div className="mb-9">
         <p className="text-sm justify text- lg:text-base">저는 설문조사 솔루션 스타트업에서 서비스 기획과 온라인 마케팅 업무를 담당하며 IT회사에서의 경력을 시작했습니다. 웹사이트 및 모바일 애플리케이션의 서비스 플로우 와이어프레이밍 및 
@@ -19,16 +20,15 @@ export default function Home() {
       </div>
       <div>
         <h2 className="text-lg font-bold mb-9">Capability</h2>
-        <div className="grid lg:grid-cols-2 gap-x-4 gap-y-3">
+        <motion.div variants={stagger} initial="initial" animate="animate" className="grid lg:grid-cols-2 gap-x-4 gap-y-3">
           {services.map(service => (
-            // To do : Framer motion apply 
-            <div key={service.id} >
+            <motion.div variants={fadeInAnimation} key={service.id} >
               <CapabilityCard service={service}  />
-            </div>)
+            </motion.div>)
           )}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

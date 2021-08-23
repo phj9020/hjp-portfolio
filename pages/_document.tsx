@@ -18,6 +18,7 @@ class MyDocument extends Document {
                     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
                     crossOrigin="anonymous"
                 />
+                <link rel="icon" href="/portfolio.png" />
             </Head>
             <body className="bg-gradient-to-r from-green to-blue-400 dark:from-midnightStart dark:to-midnightEnd">
                 <Main />

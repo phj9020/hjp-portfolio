@@ -3,8 +3,9 @@ import Sidebar from '../components/Sidebar'
 import "@material-tailwind/react/tailwind.css";
 import '../styles/globals.css';
 import { ThemeProvider } from 'next-themes'
+import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <ThemeProvider attribute="class">
       <div className="grid grid-cols-12 gap-6 px-8 my-28 lg:px-36 sm:px-14 dark:text-white">
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }) {
         </div>
         <div className="flex flex-col col-span-12 bg-white rounded-md lg:col-span-9 shadow-custom-light dark:shadow-custom-dark dark:bg-black">
           <Navbar />
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route}/>
+          </AnimatePresence>
         </div>
       </div>
     </ThemeProvider>

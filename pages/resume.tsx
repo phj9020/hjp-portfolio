@@ -1,20 +1,21 @@
 import Head from 'next/head';
 import { Bar } from '../components/Bar';
 import {languages, tools} from '../data';
+import { motion } from "framer-motion";
+import { fadeInAnimation, routeAnimation } from '../animation';
 
 function resume() {
     return (
-        <div>
+        <motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit">
             <Head>
                     <title>박한진-포트폴리오 | Resume</title>
-                    <meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
-                    <meta name="description" content="Your description goes here" />
+                    <meta name="keywords" content="Javascript, react.js, expo, graphql, apollo, material-ui"/>
+                    <meta name="description" content="박한진의 이력서" />
             </Head>
             <div className="p-5">
                 {/* Experience & Dev Study */}
                 <div className="grid grid-cols-1 gap-4 mb-6 md:grid-cols-2">
-                     {/* to do : framer - y bottom to top  animation */}
-                    <div className="mb-4 md:mb-0">
+                    <motion.div variants={fadeInAnimation} initial="initial" animate="animate" className="mb-4 md:mb-0">
                         <h3 className="mb-2 text-lg font-bold">Experience</h3>
                         <div className="text-sm md:text-base">
                             <h4 className="mb-2 italic">IMHC (2017.02 ~ 2020.06)</h4>
@@ -31,9 +32,8 @@ function resume() {
                                 <li>마케팅 KPI 추적 및 분석</li>
                             </ul>
                         </div>
-                    </div>
-                    {/*  to do : framer - y bottom to top  animation */}
-                    <div>
+                    </motion.div>
+                    <motion.div variants={fadeInAnimation} initial="initial" animate="animate">
                         <h3 className="mb-2 text-lg font-bold">Dev Study</h3>
                         <div className="mb-3 text-sm md:mb-3 md:text-base">
                             <h4 className="mb-1 italic">Autodidacticism (2021.02 ~ 현재)</h4>
@@ -58,7 +58,7 @@ function resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 {/* Language & tool chart */}
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -80,7 +80,7 @@ function resume() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
