@@ -27,7 +27,7 @@ export const services:IService[] = [
     {
         id:4,
         title: "Deployment",
-        description: "<b>Heroku, Netlify, firebase</b> 등을 이용한 서버, 클라이언트 배포",
+        description: "<b>Heroku, Netlify, firebase, Vercel</b> 등을 이용한 서버, 클라이언트 배포",
         Icon: AiOutlineDeploymentUnit
     },
     {

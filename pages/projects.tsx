@@ -10,7 +10,8 @@ import { fadeInAnimation, routeAnimation, stagger } from '../animation';
 function Projects() {
     const [projectFilter, setProjectFilter] = useState(projects);
     const [active, setActive] = useState("All");
-    
+    const [showDetail, setShowDetail] = useState<number | null>(null);
+
     const handleFilterCategory = (category: Category) => {
         const filteredData = projects.filter((project) => project.category.includes(category));
         setProjectFilter(filteredData);
@@ -30,7 +31,7 @@ function Projects() {
                     {
                         projectFilter.map(project => 
                             <motion.div variants={fadeInAnimation} className="col-span-12 p-2 sm:col-span-6 lg:col-span-4" key={project.id}>
-                                <ProjectCard project={project} />
+                                <ProjectCard project={project} showDetail={showDetail} setShowDetail={setShowDetail} />
                             </motion.div>
                         )
                     }

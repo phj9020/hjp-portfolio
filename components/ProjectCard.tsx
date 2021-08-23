@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from 'react';
+import {FunctionComponent } from 'react';
 import {IProject} from '../type';
 import Image from 'next/image';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
@@ -6,24 +6,16 @@ import {MdClose} from 'react-icons/md';
 import { motion } from "framer-motion";
 import { projectModalAnimation, stagger, fadeInAnimation } from '../animation';
 
-const ProjectCard:FunctionComponent<{project:IProject}> = ({project}) => {
-    const [showDetail, setShowDetail] = useState(false);
-    const {name, description, image_path, github_url, deployed_url, key_stacks} = project;
-    
-    const showDetailModal = ()=> {
-        setShowDetail(true);
-    }
-    const hideDetailModal = ()=> {
-        setShowDetail(false);
-    }
+const ProjectCard:FunctionComponent<{project:IProject, showDetail:number|null, setShowDetail:(id:number|null)=> void }> = ({project, showDetail, setShowDetail}) => {
+    const {id, name, description, image_path, github_url, deployed_url, key_stacks} = project;
 
     return (
         <div className="flex flex-col">
-            <Image className="cursor-pointer" src={image_path} alt={name} width={300} height={200} layout="responsive" onClick={showDetailModal} />
-            <p className="my-2 text-sm text-center cursor-pointer" onClick={showDetailModal}>{name}</p>
+            <Image className="cursor-pointer" src={image_path} alt={name} width={300} height={200} layout="responsive" onClick={()=> setShowDetail(id)} />
+            <p className="my-2 text-sm text-center cursor-pointer" onClick={()=> setShowDetail(id)}>{name}</p>
             {/* modal */}
-            {showDetail ? (
-                <motion.div id="modal" variants={projectModalAnimation} initial="initial" animate="animate" className="absolute top-0 left-0 z-10 grid w-full h-auto px-5 text-black bg-white border-2 rounded py-9 border-green dark:border-pinkyEnd md:grid-cols-2 gap-x-12 dark:text-white dark:bg-grayish">
+            {showDetail === id ? (
+                <motion.div variants={projectModalAnimation} initial="initial" animate="animate" className="absolute top-0 left-0 z-10 grid w-full h-auto px-5 text-black bg-white border-2 rounded py-9 border-green dark:border-pinkyEnd md:grid-cols-2 gap-x-12 dark:text-white dark:bg-grayish">
                     <motion.div variants={stagger} initial="initial" animate="animate" >
                         <motion.div variants={fadeInAnimation}>
                             <Image src={image_path} alt={name} width={300} height={200} layout="responsive" />
@@ -49,7 +41,7 @@ const ProjectCard:FunctionComponent<{project:IProject}> = ({project}) => {
                                 </motion.span>)}
                         </motion.div>
                     </div>
-                    <button className="absolute p-1 right-3 top-3 focus:outline-none" onClick={hideDetailModal}>
+                    <button className="absolute p-1 right-3 top-3 focus:outline-none" onClick={() => setShowDetail(null)}>
                         <MdClose size={25} />
                     </button>
                 </motion.div>
