@@ -24,8 +24,8 @@ function resume() {
                                 <span className="py-0.5 px-1 whitespace-nowrap block text-sm ">담당업무</span>
                             </div>
                             <ul className="pl-5 mt-2 list-disc">
-                                <li>기획 요구사항 정리</li>
-                                <li>서비스 흐름도 MockUp 작성 &amp; 시나리오 케이스 테스트</li>
+                                <li>기획 요구사항 정리 및 개발자, 디자이너와 조율</li>
+                                <li>서비스 흐름도 작성 &amp; 시나리오 케이스 테스트</li>
                                 <li>GA(Google Analytics) 운영 및 관리</li>
                                 <li>구글 Ads 운영 및 관리</li>
                                 <li>Google Tag Manager 운영 및 관리</li>

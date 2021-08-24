@@ -9,25 +9,25 @@ export const services:IService[] = [
     {   
         id:1,
         title: "Frontend Development",
-        description: "<b>HTML, CSS, JavaScript, React.js(+Next.js)</b>를 이용한 반응형 SPA 웹페이지 제작 가능",
+        description: "<b>HTML, CSS, JavaScript, React.js(+Next.js)</b>를 이용한 반응형 SPA 웹페이지 제작",
         Icon: FiMonitor
     },
     {
         id:2,
         title: "Backend Development",
-        description: "<b>Node.js, Express.js, apollo-server</b>를 이용한 서버 구축 및 데이터베이스 연동 구현",
+        description: "<b>Node.js, Express.js, apollo-server</b>를 이용한 백엔드 구축 및 데이터베이스 연동 구현",
         Icon: AiOutlineDatabase
     },
     {
         id:3,
         title: "App Development",
-        description: "<b>Expo</b>를 이용한 react 앱 개발 경험, 구글 플레이 스토어 앱 출시",
+        description: "<b>Expo</b>를 이용한 react-native 앱 개발, 구글 플레이 스토어 배포",
         Icon: AiOutlineMobile
     },
     {
         id:4,
         title: "Deployment",
-        description: "<b>Heroku, Netlify, firebase, Vercel</b> 등을 이용한 서버, 클라이언트 배포",
+        description: "<b>Heroku, Netlify, firebase, Vercel</b>을 이용한 서버, 클라이언트 배포",
         Icon: AiOutlineDeploymentUnit
     },
     {
@@ -54,7 +54,7 @@ export const languages:ISKill[] = [
     {
         id:3,
         name:"Expo",
-        level:"50%",
+        level:"40%",
         Icon:SiExpo
     },
     {
