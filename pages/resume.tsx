@@ -44,8 +44,8 @@ function resume() {
                             </ul>
                         </div>
                         <div className="text-sm md:text-base">
-                            <h4 className="mb-1 italic">[NCS]프론트엔드 개발자 직업 훈련기관(2020.07 ~ 2021.01)</h4>
-                            <p>프론트엔드UI/UX 과정 수료</p>
+                            <h4 className="mb-1 italic">[NCS]프론트엔드 개발 과정 이수(2020.07 ~ 2021.01)</h4>
+                            <p>결과물</p>
                             <ul>
                                 <li>
                                     <a className="underline transition duration-300 hover:text-red-400" 
