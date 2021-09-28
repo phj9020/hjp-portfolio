@@ -203,4 +203,14 @@ export const projects:IProject[] = [
         category:["All","React"],
         key_stacks: ["react.js", "firebase-auth", "firebase-storage", "firestore"]
     },
+    {
+        id:10,
+        name: "블로그 앱",
+        description: "개발 공부와 프로젝트를 진행하며 배운 내용들을 기록하기 위해 만든 나만의 블로그 앱",
+        image_path: "/images/blog-app.png",
+        github_url:"https://github.com/phj9020/blog-app",
+        deployed_url: "https://agitated-curie-dd026a.netlify.app",
+        category:["All","React","Express"],
+        key_stacks: ["react.js", "typescript", "MongoDB", "Express.js", "Node.js", "Heroku", "Netlify"]
+    },
 ]
