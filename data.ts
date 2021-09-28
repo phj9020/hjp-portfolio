@@ -211,6 +211,6 @@ export const projects:IProject[] = [
         github_url:"https://github.com/phj9020/blog-app",
         deployed_url: "https://agitated-curie-dd026a.netlify.app",
         category:["All","React","Express"],
-        key_stacks: ["react.js", "typescript", "MongoDB", "Express.js", "Node.js", "Heroku", "Netlify"]
+        key_stacks: ["react.js", "typescript", "MongoDB", "Express.js", "Node.js", "aws-s3", "Heroku", "Netlify"]
     },
 ]
