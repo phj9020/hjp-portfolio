@@ -42,7 +42,7 @@ export const languages:ISKill[] = [
     {
         id:1,
         name:"Javascript",
-        level:"70%",
+        level:"65%",
         Icon:DiJavascript1
     },
     {
@@ -54,25 +54,25 @@ export const languages:ISKill[] = [
     {
         id:3,
         name:"Expo",
-        level:"40%",
+        level:"35%",
         Icon:SiExpo
     },
     {
         id:4,
         name:"GraphQL",
-        level:"50%",
+        level:"40%",
         Icon:GrGraphQl
     },
     {
         id:5,
         name:"Apollo",
-        level:"50%",
+        level:"40%",
         Icon:SiApollographql
     },
     {
         id:6,
         name:"Material UI",
-        level:"60%",
+        level:"50%",
         Icon:SiMaterialUi
     },
 ];
