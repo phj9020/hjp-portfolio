@@ -3,35 +3,42 @@ import { IProject, IService, ISKill } from './type';
 import {FiMonitor, FiFigma, FiFramer} from 'react-icons/fi';
 import {DiJavascript1, DiReact, DiVisualstudio} from 'react-icons/di';
 import {GrGraphQl} from 'react-icons/gr';
+import { AiOutlineFileSearch } from 'react-icons/ai';
 import {SiExpo, SiApollographql, SiMaterialUi, SiPostman} from 'react-icons/si';
 
 export const services:IService[] = [
     {   
         id:1,
+        title: "Story Board",
+        description: "기능명세서 작성 및 기능요구 사항에 따른 와이어프레이밍 작업",
+        Icon: AiOutlineFileSearch
+    },
+    {   
+        id:2,
         title: "Frontend Development",
-        description: "<b>HTML, CSS, JavaScript, React.js(+Next.js)</b>를 이용한 반응형 SPA 웹페이지 제작",
+        description: "<b>HTML, CSS, JavaScript, React.js(+Next.js)</b>를 이용한 반응형 SPA 웹페이지 제작 가능",
         Icon: FiMonitor
     },
     {
-        id:2,
+        id:3,
         title: "Backend Development",
-        description: "<b>Node.js, Express.js, apollo-server</b>를 이용한 백엔드 구축 및 데이터베이스 연동 구현",
+        description: "<b>Node.js, Express.js, apollo-server</b>를 이용한 서버 구축 및 데이터베이스 연동 구현",
         Icon: AiOutlineDatabase
     },
     {
-        id:3,
+        id:4,
         title: "App Development",
         description: "<b>Expo</b>를 이용한 react-native 앱 개발, 구글 플레이 스토어 배포",
         Icon: AiOutlineMobile
     },
     {
-        id:4,
+        id:5,
         title: "Deployment",
         description: "<b>Heroku, Netlify, firebase, Vercel</b>을 이용한 서버, 클라이언트 배포",
         Icon: AiOutlineDeploymentUnit
     },
     {
-        id:5,
+        id:6,
         title: "Design",
         description: "<b>Figma</b>를 이용한 UI/UX 디자인 및 와이어프레임 제작",
         Icon: FiFigma
