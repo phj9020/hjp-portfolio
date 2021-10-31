@@ -10,7 +10,7 @@ export const services:IService[] = [
     {   
         id:1,
         title: "Story Board",
-        description: "기능명세서 작성 및 기능요구 사항에 따른 와이어프레이밍 작업",
+        description: "기능 정의 및 정책 정리, 콘텐츠 구성 및 문구 정리, 서비스 플로우 정리 및 테스트 케이스 시나리오 작성",
         Icon: AiOutlineFileSearch
     },
     {   
